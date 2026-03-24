@@ -10,3 +10,12 @@ module byte_memory(
   end
 
 endmodule
+/*
+This is the 8-bit version of the same idea.
+data[7:0] is the 8-bit value you want to store
+store is the save signal
+memory[7:0] is the stored value
+How it works:
+When store = 1, it saves all 8 bits from data
+When store = 0, it keeps the old 8-bit value
+*/
