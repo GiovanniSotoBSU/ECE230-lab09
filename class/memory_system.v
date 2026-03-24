@@ -5,18 +5,18 @@ module memory_system(
   output [7:0] memory
 );
 
-  wire[7:0] data0, data1, data2, data3;
+  wire [7:0] data0, data1, data2, data3;
   wire store0, store1, store2, store3;
   wire [7:0] mem0, mem1, mem2, mem3;
 
   data_demux dm_data(
     .data(data),
-    .se(addr),
+    .sel(addr),
     .A(data0),
     .B(data1),
     .C(data2),
     .D(data3)
-  ):
+  );
 
   store_demux dm_store(
     .store(store),
