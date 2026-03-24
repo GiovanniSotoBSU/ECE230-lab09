@@ -18,3 +18,14 @@ module mux4x8(
 
 endmodule
   
+/*
+This chooses which stored byte gets shown on the LEDs.
+Inputs A, B, C, D are the 4 stored bytes
+sel is the address
+Y is the chosen output
+How it works:
+If sel = 00, show byte A
+If sel = 01, show byte B
+If sel = 10, show byte C
+If sel = 11, show byte D
+*/
