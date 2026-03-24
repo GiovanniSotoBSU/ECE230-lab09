@@ -18,3 +18,13 @@ module store_demux(
 
 endmodule
       
+/*
+This does the same idea, but for the store signal.
+store is the button press
+sel is the address
+A, B, C, D are the store lines for each byte
+How it works:
+Only the selected byte gets store = 1
+The other bytes get 0
+That matters because you only want one memory location to update when you press the button.
+*/
