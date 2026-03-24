@@ -17,3 +17,16 @@ module data_demux(
   end
 
 endmodule
+
+/*
+This sends the input data to only one of the 4 memory locations.
+data is the 8-bit value coming in
+sel is the 2-bit address
+A, B, C, D are the 4 outputs
+How it works:
+If sel = 00, data goes to A
+If sel = 01, data goes to B
+If sel = 10, data goes to C
+If sel = 11, data goes to D
+The other outputs get zero.
+*/
